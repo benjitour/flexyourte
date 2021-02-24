@@ -147,12 +147,12 @@
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139730465-6 container-element" style="">
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1614195987696_867 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1614195987696_867 nav {left: -9999px;}.hamburger-menu_1614195987696_867 nav ul {margin-top: 80px;}.hamburger-menu_1614195987696_867 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1614195987696_867.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1614195987696_867 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1614195987696_867.open .nav-container {}.hamburger-menu_1614195987696_867 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1614195987696_867 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1614199138162_797 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1614199138162_797 nav {left: -9999px;}.hamburger-menu_1614199138162_797 nav ul {margin-top: 80px;}.hamburger-menu_1614199138162_797 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1614199138162_797.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1614199138162_797 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1614199138162_797.open .nav-container {}.hamburger-menu_1614199138162_797 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1614199138162_797 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1614195987696_867.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1614195987696_867 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1614195987696_867.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1614195987696_867.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1614195987696_867 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1614195987696_867.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1614199138162_797.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1614199138162_797 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1614199138162_797.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1614199138162_797.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1614199138162_797 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1614199138162_797.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1614195987696_867 closed">
+<div class="hamburger-menu_1614199138162_797 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -181,26 +181,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1614195987696_867').removeClass('open');
-    $('.hamburger-menu_1614195987696_867').addClass('closed');
+    $('.hamburger-menu_1614199138162_797').removeClass('open');
+    $('.hamburger-menu_1614199138162_797').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1614195987696_867').addClass('open');
-    $('.hamburger-menu_1614195987696_867').removeClass('closed');
+    $('.hamburger-menu_1614199138162_797').addClass('open');
+    $('.hamburger-menu_1614199138162_797').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1614195987696_867').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1614199138162_797').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1614195987696_867 .nav-container').css({
+    $('.hamburger-menu_1614199138162_797 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1614195987696_867 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1614199138162_797 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -247,25 +247,41 @@
         <div data-silex-type="text-element" class="editable-style text-element silex-id-1614186105939-1" style=""><div class="silex-element-content normal"><p>
 </p><h2><b>Comment realiser sa Flex Yourte</b><br>DIY : Do It Yourself</h2>
 
-<p></p></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1614190699780-15" style=""><div data-silex-type="image-element" class="editable-style image-element silex-id-1614188868509-5" style=""><img src="assets/icons8-calculator-100.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189538230-9" style=""><div class="silex-element-content normal"><p><b>Calculateur</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614191100834-18" style=""><div class="silex-element-content normal"><p>Plancher<br></p></div></div></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614188893266-6" style=""><img src="assets/icons8-plan-100.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614189445526-7" style=""><img src="assets/icons8-salle-de-classe-100.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189501054-8" style=""><div class="silex-element-content normal"><p><b>Plans</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189678561-11" style=""><div class="silex-element-content normal"><br><p><b>soutien</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614190143655-13" style=""><div class="silex-element-content normal"><p><b>Atelier</b><br></p></div></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614190114402-12" style=""><img src="assets/icons8-perceuse-100.png"></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1614190287711-14" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1614191180205-19" style=""><div class="silex-element-content normal"><p><a href="open-source-.html" linktype="LinkTypePage">Structure</a></p><p>Toile</p><p>Plancher</p><p>Panneaux solaire</p><p>législation <br></p></div></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614188848296-4" style=""><img src="assets/icons8-livre-100.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189563402-10" style=""><div class="silex-element-content normal"><p><b>Manuelle</b><br></p></div></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614191058501-17" style=""><div class="silex-element-content normal"><p>Toile<br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614190967741-16" style=""><div class="silex-element-content normal"><p>Structure<br></p></div></div></div>
+<p></p></div></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1614190699780-15" style=""><div data-silex-type="image-element" class="editable-style image-element silex-id-1614188868509-5" style=""><img src="assets/icons8-calculator-100.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189538230-9" style=""><div class="silex-element-content normal"><p><b>Calculateur</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614191100834-18" style=""><div class="silex-element-content normal"><p>Plancher<br></p></div></div></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614188893266-6" style=""><img src="assets/icons8-plan-100.png"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614189445526-7" style=""><img src="assets/icons8-salle-de-classe-100.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189501054-8" style=""><div class="silex-element-content normal"><p><b>Plans</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189678561-11" style=""><div class="silex-element-content normal"><br><p><b>soutien</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614190143655-13" style=""><div class="silex-element-content normal"><p><b>Atelier</b><br></p></div></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1614190114402-12" style=""><img src="assets/icons8-perceuse-100.png"></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1614190287711-14" style=""><div data-silex-type="image-element" class="editable-style image-element silex-id-1614188848296-4" style=""><img src="assets/icons8-livre-100.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614189563402-10" style=""><div class="silex-element-content normal"><p><b>Manuelle</b><br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614191180205-19" style=""><div class="silex-element-content normal"><p><a href="open-source-.html" linktype="LinkTypePage">Structure</a></p><p>Toile</p><p>Plancher</p><p>Panneaux solaire</p><p>législation <br></p></div></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614191058501-17" style=""><div class="silex-element-content normal"><p>Toile<br></p></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614190967741-16" style=""><div class="silex-element-content normal"><p>Structure<br></p></div></div></div>
     </section><section data-silex-type="container-element" class="container-element editable-style silex-id-1492633712778-6 section-element prevent-resizable" style="">
         <div data-silex-type="container-element" class="editable-style silex-id-1492633712777-5 container-element silex-element-content website-width" style="">
             
-        <div data-silex-type="html-element" class="editable-style html-element silex-id-1614196850850-3 page-home paged-element paged-element-visible" style=""><div class="silex-element-content">
-<script src="js/gdprscript.js"></script>
+        <div data-silex-type="html-element" class="editable-style html-element silex-id-1614199610267-3 page-home paged-element silex-component-skill-bars paged-element-visible"><div class="silex-element-content">
+<style type="text/css">.skillbar {position: relative; display: block; margin-bottom: 15px; width: 100%; background: #eee; height: 35px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-transition: 0.4s linear; -moz-transition: 0.4s linear; -ms-transition: 0.4s linear; -o-transition: 0.4s linear; transition: 0.4s linear; -webkit-transition-property: width, background-color; -moz-transition-property: width, background-color; -ms-transition-property: width, background-color; -o-transition-property: width, background-color; transition-property: width, background-color;}.skillbar-title {position: relative; float: left; width: 25%; font-weight: bold; font-size: 13px; color: #ffffff; background: #6adcfa; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 4px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}.skillbar-title span {display: block; text-align: center; background: rgba(0, 0, 0, 0.1); height: 35px; line-height: 35px; -webkit-border-top-left-radius: 3px; -webkit-border-bottom-left-radius: 3px; -moz-border-radius-topleft: 3px; -moz-border-radius-bottomleft: 3px; border-top-left-radius: 3px; border-bottom-left-radius: 3px;}.skillbar-bar {float: left; height: 35px; width: 0px; border-radius: 0 3px 3px 0; -moz-border-radius: 0 3px 3px 0; -webkit-border-radius: 0 3px 3px 0;}.skill-bar-percent {position: absolute; right: 10px; top: 0; font-size: 11px; height: 35px; line-height: 35px; color: rgba(0, 0, 0, 0.4);}</style>
+<script type="text/javascript">
+  var fillBarSize = $('.skillbar').width() * (1 - 25 / 100);
+  var doc = $(document);
+  doc.scroll(function() {
+    var skillbars = $('.skillbar');
+    // Start animation when the skillbars hit the middle of the screen
+    if (skillbars.offset().top <= (doc.scrollTop() + $(window).height()/2)) {
+      $('.skillbar').each(function(){
+        $(this).find('.skillbar-bar').delay(500).animate({
+          width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
+        },6000);
+      });
+    }
+  });
+</script>
+</div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1614199722567-4 page-home paged-element paged-element-visible" style=""><div class="silex-element-content"><p><script src="js/gdprscript.js"></script>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta charset="utf-8">
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 
 
 
-<div id="ggbApplet"></div>
+</p><div id="ggbApplet"></div>
 
 <script>
 var parameters = {
 "id": "ggbApplet",
-"width":1200,
-"height":1200,
+"width":1294,
+"height":1217,
 "showMenuBar":false,
 "showAlgebraInput":false,
 "showToolBar":false,
@@ -304,9 +320,7 @@ var views = {'is3D': 1,'AV': 0,'SV': 0,'CV': 0,'EV2': 1,'CP': 0,'PC': 0,'DA': 0,
 var applet = new GGBApplet(parameters, '5.0', views);
 window.onload = function() {applet.inject('ggbApplet')};
 applet.setPreviewImage('https://www.flexyourte.com/uploads/2/4/8/1/24812001/geogebra-loading_orig.png','https://res.cloudinary.com/practicaldev/image/fetch/s--QHuL8Cy7--/c_imagga_scale,f_auto,fl_progressive,h_420,q_66,w_1000/https://dev-to-uploads.s3.amazonaws.com/i/cmidlcq1jvb4o8gg76a6.gif');
-</script>
-
-</div></div></div>
+</script><p></p></div></div></div>
     </section><section data-silex-type="container-element" class="container-element editable-style silex-id-1483139189898-1 section-element prevent-resizable" style="">
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139189897-0 container-element" style="">
             
