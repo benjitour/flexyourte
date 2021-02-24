@@ -109,12 +109,12 @@
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139730465-6 container-element">
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1614179340524_305 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1614179340524_305 nav {left: -9999px;}.hamburger-menu_1614179340524_305 nav ul {margin-top: 80px;}.hamburger-menu_1614179340524_305 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1614179340524_305.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1614179340524_305 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1614179340524_305.open .nav-container {}.hamburger-menu_1614179340524_305 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1614179340524_305 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1614179671502_712 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1614179671502_712 nav {left: -9999px;}.hamburger-menu_1614179671502_712 nav ul {margin-top: 80px;}.hamburger-menu_1614179671502_712 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1614179671502_712.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1614179671502_712 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1614179671502_712.open .nav-container {}.hamburger-menu_1614179671502_712 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1614179671502_712 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1614179340524_305.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1614179340524_305 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1614179340524_305.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1614179340524_305.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1614179340524_305 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1614179340524_305.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1614179671502_712.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1614179671502_712 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1614179671502_712.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1614179671502_712.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1614179671502_712 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1614179671502_712.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1614179340524_305 closed">
+<div class="hamburger-menu_1614179671502_712 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -125,7 +125,7 @@
         <nav role="navigation" class="">
             <ul>
             
-                <li><a href="./">Home</a></li>
+                <li><a href="./" class="">Home</a></li>
             
                 <li><a href="products.html">Products</a></li>
             
@@ -143,26 +143,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1614179340524_305').removeClass('open');
-    $('.hamburger-menu_1614179340524_305').addClass('closed');
+    $('.hamburger-menu_1614179671502_712').removeClass('open');
+    $('.hamburger-menu_1614179671502_712').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1614179340524_305').addClass('open');
-    $('.hamburger-menu_1614179340524_305').removeClass('closed');
+    $('.hamburger-menu_1614179671502_712').addClass('open');
+    $('.hamburger-menu_1614179671502_712').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1614179340524_305').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1614179671502_712').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1614179340524_305 .nav-container').css({
+    $('.hamburger-menu_1614179671502_712 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1614179340524_305 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1614179671502_712 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -170,7 +170,7 @@
   close();
 })();
 </script>
-</div></div><div data-silex-type="container-element" class="editable-style silex-id-1552773787501-6 container-element hide-on-desktop"></div><div data-silex-type="image-element" class="editable-style image-element silex-id-1594133214699-0" style=""><img src="assets/fake-logo.png"></div><div class="editable-style text-element silex-id-1439156722322-45 hide-on-mobile nav" data-silex-type="text-element" style="">
+</div></div><div data-silex-type="container-element" class="editable-style silex-id-1552773787501-6 container-element hide-on-desktop"></div><div class="editable-style text-element silex-id-1439156722322-45 hide-on-mobile nav" data-silex-type="text-element" style="">
                 <div class="silex-element-content normal"><p><a href="./" class="">Home</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="products.html" class="">Products</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="about.html" class="">About</a>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                         <a href="contact.html" class="page-link-active">Contact us
                         </a></p></div>
             </div></div>
@@ -191,21 +191,21 @@
             
         <div data-silex-type="text-element" class="editable-style silex-id-1483140123370-22 text-element">
                 <div class="silex-element-content normal"><h2>Contact us<br></h2></div>
-            </div><div data-silex-type="html-element" class="editable-style silex-id-1548873003503-4 html-element silex-component silex-component-map silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><div id="mapdiv_1614179340548_944" class="map"><div class="ol-viewport" style="position: relative; overflow: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 100%; height: 100%; z-index: 0; display: none;" class="ol-unselectable ol-layers"></div><div style="position: absolute; z-index: 0; width: 100%; height: 100%;" class="ol-overlaycontainer"></div><div style="position: absolute; z-index: 0; width: 100%; height: 100%;" class="ol-overlaycontainer-stopevent"><div class="ol-zoom ol-unselectable ol-control"><button class="ol-zoom-in" type="button" title="Zoom in">+</button><button class="ol-zoom-out" type="button" title="Zoom out">−</button></div><div class="ol-rotate ol-unselectable ol-control ol-hidden"><button class="ol-rotate-reset" type="button" title="Reset rotation"><span class="ol-compass">⇧</span></button></div><div class="ol-attribution ol-unselectable ol-control ol-collapsed" style="display: none;"><ul></ul><button type="button" title="Attributions"><span>i</span></button></div></div></div></div>
-<style>#mapdiv_1614179340548_944 {width: 100%; height: 100%;}</style>
+            </div><div data-silex-type="html-element" class="editable-style silex-id-1548873003503-4 html-element silex-component silex-component-map silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><div id="mapdiv_1614179671509_783" class="map"><div class="ol-viewport" style="position: relative; overflow: hidden; width: 100%; height: 100%;"><div style="position: absolute; width: 100%; height: 100%; z-index: 0;" class="ol-unselectable ol-layers"><div class="ol-layer" style="position: absolute; width: 100%; height: 100%;"><canvas style="position: absolute; left: 0px; transform-origin: left top 0px; transform: matrix(1, 0, 0, 1, 0, 0);" width="460" height="387"></canvas></div></div><div style="position: absolute; z-index: 0; width: 100%; height: 100%;" class="ol-overlaycontainer"></div><div style="position: absolute; z-index: 0; width: 100%; height: 100%;" class="ol-overlaycontainer-stopevent"><div class="ol-zoom ol-unselectable ol-control"><button class="ol-zoom-in" type="button" title="Zoom in">+</button><button class="ol-zoom-out" type="button" title="Zoom out">−</button></div><div class="ol-rotate ol-unselectable ol-control ol-hidden"><button class="ol-rotate-reset" type="button" title="Reset rotation"><span class="ol-compass" style="transform: rotate(0rad);">⇧</span></button></div><div class="ol-attribution ol-unselectable ol-control ol-uncollapsible"><ul><li>© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors.</li></ul><button type="button" title="Attributions"><span>»</span></button></div></div></div></div>
+<style>#mapdiv_1614179671509_783 {width: 100%; height: 100%;}</style>
 <script>
 
 
-function init_1614179340548_944() {
+function init_1614179671509_783() {
     if(typeof(ol) === 'undefined') {
         // console.warn('Map not ready, restart later')
         // wait for dependencies to be loaded
-        setTimeout(init_1614179340548_944, 1000);
+        setTimeout(init_1614179671509_783, 1000);
         return;
     }
 
     // empty the div before adding the map again
-    $('#mapdiv_1614179340548_944').empty();
+    $('#mapdiv_1614179671509_783').empty();
 
     // apply position and zoom
     // from map URL http://www.openstreetmap.org/#map=18/48.88680/2.34235&layers=C
@@ -223,7 +223,7 @@ function init_1614179340548_944() {
               source: new ol.source.OSM()
             })
           ],
-          target: 'mapdiv_1614179340548_944',
+          target: 'mapdiv_1614179671509_783',
           view: new ol.View({
             center: center,
             zoom: zoom
@@ -232,14 +232,14 @@ function init_1614179340548_944() {
         
     }
 }
-init_1614179340548_944();
+init_1614179671509_783();
 // $(document).on('silex.resize', function() {
-//     $('#mapdiv_1614179340548_944').empty();
-//     init_1614179340548_944();
+//     $('#mapdiv_1614179671509_783').empty();
+//     init_1614179671509_783();
 // });
 
 </script>
-</div></div><div data-silex-type="html-element" class="editable-style silex-id-1548873044453-5 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><form id="id_1614179340552_204" action="https://formspree.io/your@email.com" method="POST">
+</div></div><div data-silex-type="html-element" class="editable-style silex-id-1548873044453-5 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height"><div class="silex-element-content"><form id="id_1614179671511_3" action="https://formspree.io/your@email.com" method="POST">
   
   <div>
     <label for="field1">Name</label>
@@ -260,7 +260,7 @@ init_1614179340548_944();
   
   <input type="submit" value="Send">
 </form>
-<style>#id_1614179340552_204 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1614179340552_204 input[type=submit] {width: 100%; background-color: #FFE9B9; color: #000000; padding: 14px 20px; margin: 8px 0; border: 1px solid #FFE9B9; border-radius: 3px; cursor: pointer;}#id_1614179340552_204 label {color: #000000;}#id_1614179340552_204 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1614179340552_204 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1614179340552_204 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+<style>#id_1614179671511_3 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1614179671511_3 input[type=submit] {width: 100%; background-color: #FFE9B9; color: #000000; padding: 14px 20px; margin: 8px 0; border: 1px solid #FFE9B9; border-radius: 3px; cursor: pointer;}#id_1614179671511_3 label {color: #000000;}#id_1614179671511_3 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1614179671511_3 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1614179671511_3 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
 
 </div></div></div>
     </section>
