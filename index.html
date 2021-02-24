@@ -147,12 +147,12 @@
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139730465-6 container-element" style="">
             
             
-        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1614179671502_712 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1614179671502_712 nav {left: -9999px;}.hamburger-menu_1614179671502_712 nav ul {margin-top: 80px;}.hamburger-menu_1614179671502_712 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1614179671502_712.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1614179671502_712 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1614179671502_712.open .nav-container {}.hamburger-menu_1614179671502_712 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1614179671502_712 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+        <div data-silex-type="text-element" class="editable-style silex-id-1552773751232-5 text-element silex-component prevent-resizable hide-on-desktop hamburger-menu prevent-auto-z-index"><div class="silex-element-content normal"><style>.hamburger-menu_1614183296883_66 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1614183296883_66 nav {left: -9999px;}.hamburger-menu_1614183296883_66 nav ul {margin-top: 80px;}.hamburger-menu_1614183296883_66 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1614183296883_66.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1614183296883_66 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1614183296883_66.open .nav-container {}.hamburger-menu_1614183296883_66 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1614183296883_66 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
       opacity 0.1s ease-in,
       transform 0.1s ease-in,
-      background 0.1s ease-in;}.hamburger-menu_1614179671502_712.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1614179671502_712 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1614179671502_712.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1614179671502_712.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1614179671502_712 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1614179671502_712.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+      background 0.1s ease-in;}.hamburger-menu_1614183296883_66.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1614183296883_66 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1614183296883_66.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1614183296883_66.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1614183296883_66 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1614183296883_66.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
 <!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
-<div class="hamburger-menu_1614179671502_712 closed">
+<div class="hamburger-menu_1614183296883_66 closed">
     <div class="hamburger-btn ">
       <span></span>
       <span></span>
@@ -165,11 +165,11 @@
             
                 <li><a href="./" class="page-link-active">Home</a></li>
             
-                <li><a href="products.html" class="">Products</a></li>
+                <li><a href="products.html">Products</a></li>
             
-                <li><a href="about.html" class="">About</a></li>
+                <li><a href="about.html">About</a></li>
             
-                <li><a href="open-source-.html" class="">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             
             </ul>
         </nav>
@@ -181,26 +181,26 @@
   var isOpen = false;
   function close() {
     isOpen = false;
-    $('.hamburger-menu_1614179671502_712').removeClass('open');
-    $('.hamburger-menu_1614179671502_712').addClass('closed');
+    $('.hamburger-menu_1614183296883_66').removeClass('open');
+    $('.hamburger-menu_1614183296883_66').addClass('closed');
   }
   function open() {
     isOpen = true;
-    $('.hamburger-menu_1614179671502_712').addClass('open');
-    $('.hamburger-menu_1614179671502_712').removeClass('closed');
+    $('.hamburger-menu_1614183296883_66').addClass('open');
+    $('.hamburger-menu_1614183296883_66').removeClass('closed');
   }
   function toggle() {
     if(isOpen) close();
     else open();
   }
-  var silexElement = $('.hamburger-menu_1614179671502_712').closest('.editable-style');
+  var silexElement = $('.hamburger-menu_1614183296883_66').closest('.editable-style');
   function move(data) {
     var offset = silexElement.offset();
-    $('.hamburger-menu_1614179671502_712 .nav-container').css({
+    $('.hamburger-menu_1614183296883_66 .nav-container').css({
       'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
     });
   }
-  $('.hamburger-menu_1614179671502_712 .hamburger-btn').click(function() { toggle(); });
+  $('.hamburger-menu_1614183296883_66 .hamburger-btn').click(function() { toggle(); });
   $(document).on('silex.scroll silex.resize', function(e) {
     close();
     move(window.silex);
@@ -224,7 +224,7 @@
             
             
             
-        <div data-silex-type="image-element" class="editable-style image-element silex-id-1594133214699-0" style=""><img src="assets/logoflex.png"></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1614180737528-1 text-editor-focus" style="" data-allow-silex-shortcuts="true"><div class="silex-element-content normal wysihtml-editor"><p>
+        <div data-silex-type="image-element" class="editable-style image-element silex-id-1594133214699-0" style=""><img src="assets/logoflex.png"></div><div data-silex-type="container-element" class="editable-style container-element silex-id-1614183588595-0" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1614180737528-1 text-editor-focus style-all-style" style="" data-allow-silex-shortcuts="true"><div class="silex-element-content normal wysihtml-editor"><p>
 </p><h2>La <b>yourte</b> pop-up <b>facile</b> a transporter</h2>
 
 
@@ -235,7 +235,7 @@
 <a>
 </a>
 
-<br><p></p></div></div></div>
+<br><p></p></div></div></div></div>
     </section><section data-silex-type="container-element" class="container-element editable-style silex-id-1483139324559-3 section-element prevent-resizable page-home paged-element paged-element-visible">
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139324558-2 container-element">
 
@@ -287,7 +287,7 @@
         <div data-silex-type="container-element" class="editable-style silex-id-1492633712777-5 container-element silex-element-content website-width" style="">
             
         </div>
-    </section><section data-silex-type="container-element" class="container-element editable-style silex-id-1483139189898-1 section-element prevent-resizable">
+    </section><section data-silex-type="container-element" class="container-element editable-style silex-id-1483139189898-1 section-element prevent-resizable" style="">
         <div data-silex-type="container-element" class="editable-style silex-element-content website-width silex-id-1483139189897-0 container-element" style="">
             
             
@@ -297,12 +297,12 @@
             
             
         <a href="https://twitter.com/silexlabs" class="editable-style image-element silex-id-1439156720299-25" data-silex-type="image-element" style=""><img class="" src="assets/bouton-twitter-bleu.png">
-            </a><a href="//www.facebook.com/silexlabs" class="editable-style image-element silex-id-1439156720197-24" data-silex-type="image-element"><img class="" src="assets/bouton-facebook-bleu.png">
-            </a><a href="https://plus.google.com/communities/107373636457908189681" class="editable-style image-element silex-id-1439156720096-23" data-silex-type="image-element"><img class="" src="assets/bouton-googleplus-bleu.png">
-            </a><a href="//www.youtube.com/user/Silexlabs" class="editable-style image-element silex-id-1439156719995-22" data-silex-type="image-element"><img class="" src="assets/bouton-youtube-bleu.png">
-            </a><a href="//eepurl.com/F48q5" class="editable-style image-element silex-id-1439156719895-21" data-silex-type="image-element"><img class="" src="assets/bouton-newsletter.png">
+            </a><a href="//www.facebook.com/silexlabs" class="editable-style image-element silex-id-1439156720197-24" data-silex-type="image-element" style=""><img class="" src="assets/bouton-facebook-bleu.png">
+            </a><a href="https://plus.google.com/communities/107373636457908189681" class="editable-style image-element silex-id-1439156720096-23" data-silex-type="image-element" style=""><img class="" src="assets/bouton-googleplus-bleu.png">
+            </a><a href="//www.youtube.com/user/Silexlabs" class="editable-style image-element silex-id-1439156719995-22" data-silex-type="image-element" style=""><img class="" src="assets/bouton-youtube-bleu.png">
+            </a><a href="//eepurl.com/F48q5" class="editable-style image-element silex-id-1439156719895-21" data-silex-type="image-element" style=""><img class="" src="assets/bouton-newsletter.png">
             </a><a href="//www.silexlabs.org/" class="editable-style image-element silex-id-1439156720704-29" data-silex-type="image-element" style=""><img class="" src="assets/logo-silexlabs.png">
-            </a><div data-silex-type="text-element" class="editable-style text-element abel silex-id-1439156720502-27 footer">
+            </a><div data-silex-type="text-element" class="editable-style text-element abel silex-id-1439156720502-27 footer" style="">
                 <div class="silex-element-content">
                     <p>Creative Commons template by <a href="http://lexoyo.me">@lexoyo</a>&nbsp; &nbsp; - &nbsp; &nbsp;Powered by&nbsp;benjitour Libre&nbsp;
                     </p>
